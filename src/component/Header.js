@@ -1,7 +1,9 @@
 import { Link,NavLink } from "react-router-dom"
 import logo from "../assects/logo.png"
+import { useCart } from "../context/CartContext"
 
 export const Header = () => {
+  const{cartList}=useCart();
 
   const activeClass="text-base mx-3 py-2 pr-4 pl-3 text-white bg-orange-500 rounded "
   const inactiveClass="text-base mx-3 py-2 pr-4 pl-3  text-white bg-orange-400 rounded hover:bg-orange"
@@ -19,7 +21,7 @@ export const Header = () => {
             <NavLink to="/likes" className={({isActive})=>isActive ? activeClass:inactiveClass}>Cart</NavLink>
           </div>
 
-          <div>Cart : 2</div>
+          <div>Cart : {cartList.length}</div>
         </nav>
       </header>
   )
