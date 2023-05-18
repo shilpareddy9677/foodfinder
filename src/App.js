@@ -4,7 +4,7 @@ import {Allrouts} from "./routes/Allrouts"
 
 export const App = () => {
   return (
-    <div className=" mx-10 sm:mx-0">
+    <div className=" mx-10 ">
       <Header />
       <Allrouts/>
     </div>
