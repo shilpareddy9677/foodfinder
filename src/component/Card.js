@@ -19,7 +19,7 @@ export const Card = ({product}) => {
  
   return (
     <div className="shadow-lg my-6 mr-6">
-      <img  className="box-content h-60 w-70 p-2" src={image} alt={name} />
+      <img  className="box-content h-60 w-70 p-2 " src={image} alt={name} />
       <p className="p-2">{name}</p>
       <div className="flex items-center p-2 justify-between">
         <p>${price}</p>

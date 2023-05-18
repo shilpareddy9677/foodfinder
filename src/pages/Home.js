@@ -18,7 +18,7 @@ export const Home = () => {
 
   return (
     <main>
-      <section className="flex flex-wrap ">
+      <section className="flex flex-wrap max-[320px]:justify-center">
         {products.map((product)=>(
           <Card  key={product.id} product={product}/>
         )) }

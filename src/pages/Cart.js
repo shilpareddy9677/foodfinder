@@ -17,7 +17,7 @@ export const Cart = () => {
   return (
     <main>
       <section>
-        <h1 className="text-center font-bold">Cart Items : {cartList.length}/${total}</h1>
+        <h1 className="text-center font-bold ">Cart Items : {cartList.length}/${total}</h1>
         {cartList.map((product)=>(
           <CartCard key={product.id} product={product}/>
         ))}
