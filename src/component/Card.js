@@ -14,7 +14,7 @@ export const Card = ({product}) => {
     }else{
       setIsInCart(false)
     }
-  },[cartList])
+  },[cartList,id])
 
  
   return (
