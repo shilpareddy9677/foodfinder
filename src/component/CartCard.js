@@ -1,7 +1,7 @@
 
 
 export const CartCard = ({product}) => {
-    const {id,name,price,image}=product
+    const {name,price,image}=product
 
   return (
     <div className="flex  shadow-lg p-4 my-5 justify-between items-center   border-b-2  border-gray-300">

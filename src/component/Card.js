@@ -2,7 +2,7 @@
 
 export const Card = ({product}) => {
 
-  const {id,name,price,image}=product
+  const {name,price,image}=product
 
   return (
     <div className="shadow-lg my-6 mr-6">
